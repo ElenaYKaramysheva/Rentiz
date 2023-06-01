@@ -1,0 +1,12 @@
+.text-base {
+    font-size: 1.125rem;
+    line-height: 1.7em;
+    color: var(--text-color-secondary);
+}
+
+.text-loud {
+    font-size: 2rem;
+    line-height: 1.57em;
+    color: var(--text-color-primary);
+    text-transform: capitalize;
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rentiz</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Это временные стили, мы их потом удалим -->
+  <style>
+    body > div { margin: 50px auto; max-width: 1420px; padding: 0 30px; }
+  </style>
+</head>
+<body>
+
+  <div>
+
+    <button class="button">View all properties</button><br><br>
+    <button class="button button--small">View all properties</button><br><br>
+    <button class="button button--large">View all properties</button><br><br>
+    <button class="button button--ghost">login</button><br><br>
+
+    <a href="#" class="button">View all <br> properties</a><br><br>
+
+    
+
+    <ul class="site-menu">
+      <li class="site-menu__item">
+        <a class="site-menu__link site-menu__link--active" href="#">Home</a>
+      </li>
+      <li class="site-menu__item">
+        <a class="site-menu__link" href="#">About Us</a>
+      </li>
+      <li class="site-menu__item">
+        <a class="site-menu__link" href="#">Buing</a>
+      </li>
+      <li class="site-menu__item">
+        <a class="site-menu__link" href="#">Renting</a> 
+      </li>
+      <li class="site-menu__item">
+        <a class="site-menu__link" href="#">Selling</a>
+      </li>
+      <li class="site-menu__item">
+        <a class="site-menu__link" href="#">Contact Us</a>
+      </li>
+    </ul><br><br>
+    
+    
+    <blockquote class="review">
+      <p class="text-loud review__text">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</p>
+      <cite class="review__name">Elena Pravo</cite>
+      <p class="text-base review__status">Ceo, Upstate</p>
+    </blockquote><br><br>
+
+
+    
+    <ul class="social">
+      <li class="social__item">
+        <a class="icon icon--fb social-link" href="#">Facebook</a>
+      </li>
+      <li class="social__item">
+        <a class="icon icon--inst social-link" href="#">Instagram</a>
+      </li>
+      <li class="social__item">
+        <a class="icon icon--tw social-link" href="#">Twitter</a>
+      </li>
+      <li class="social__item">
+        <a class="icon icon--yt social-link" href="#">Youtube</a>
+      </li>
+    </ul><br><br>
+
+    <i class="icon icon--bed icon--accent"></i>
+    <i class="icon icon--bath icon--accent"></i>
+    <i class="icon icon--square icon--accent"></i>
+    <br><br>
+    <i class="icon icon--large icon--search icon--accent"></i>
+    <i class="icon icon--large icon--like icon--accent"></i>
+    <i class="icon icon--large icon--bolt icon--accent"></i>
+    
+    <h1 class="title title--large">title1</h1>
+    <h1 class="title title--medium">title2</h1>
+    <h1 class="title title--small">Easy to find</h1>
+
+    <p class="text-base">Diam vitae, nec mattis <a class="link" href="#">quam</a> pretium amet facilisis. Urna, massa aliqua dui pellentesque. Ac, gravida in eget non amet eget purus non.</p>
+    <br><br>
+    <p class="text-loud">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</p>
+
+    <div class="residence-card-group">
+      <article class="residence-card">
+      <img 
+        class="residence-card__photo" 
+        src="./img/residence_1.jpg" 
+        srcset="./img/residence_1.jpg 1x, ./img/residence_1@2x.jpg 2x" 
+        alt=""
+      >
+      <p class="title title--small residence-card__title">Aliva Priva Jalvin</p>
+      <p class="text-base residence-card__address">1087 Pin Oak Drive, Clinton, USA</p>
+      <ul class="option-list residence-card__options">
+        <li class="option-list__item">
+          <div class="option">
+            <i class="icon icon--bed icon--accent option__icon"></i>
+            <span class="option__text">4 beds</span>
+          </div>
+        </li>
+        <li class="option-list__item">
+          <div class="option">
+            <i class="icon icon--bath icon--accent option__icon"></i>
+            <span class="option__text">2 bath</span>
+          </div>
+        </li>
+        <li class="option-list__item">
+          <div class="option">
+            <i class="icon icon--square icon--accent option__icon"></i>
+            <span class="option__text">1203 Sqft.</span>
+          </div>
+        </li>
+      </ul>
+      </article>
+      <article class="residence-card">
+      <img 
+        class="residence-card__photo" 
+        src="./img/residence_2.jpg" 
+        srcset="./img/residence_2.jpg 1x, ./img/residence_2@2x.jpg 2x" 
+        alt=""
+      >
+      <p class="title title--small residence-card__title">Hard line orchar</p>
+      <p class="text-base residence-card__address">1087 Pin Oak Drive, Clinton, USA</p>
+      <ul class="option-list residence-card__options">
+        <li class="option-list__item">
+          <div class="option">
+            <i class="icon icon--bed icon--accent option__icon"></i>
+            <span class="option__text">4 beds</span>
+          </div>
+        </li>
+        <li class="option-list__item">
+          <div class="option">
+            <i class="icon icon--bath icon--accent option__icon"></i>
+            <span class="option__text">2 bath</span>
+          </div>
+        </li>
+        <li class="option-list__item">
+          <div class="option">
+            <i class="icon icon--square icon--accent option__icon"></i>
+            <span class="option__text">1203 Sqft.</span>
+          </div>
+        </li>
+      </ul>
+      </article>
+      <article class="residence-card">
+      <img 
+        class="residence-card__photo" 
+        src="./img/residence_3.jpg" 
+        srcset="./img/residence_3.jpg 1x, ./img/residence_3@2x.jpg 2x" 
+        alt=""
+      >
+      <p class="title title--small residence-card__title">Allpine lenevote</p>
+      <p class="text-base residence-card__address">1087 Pin Oak Drive, Clinton, USA</p>
+      <ul class="option-list residence-card__options">
+        <li class="option-list__item">
+          <div class="option">
+            <i class="icon icon--bed icon--accent option__icon"></i>
+            <span class="option__text">4 beds</span>
+          </div>
+        </li>
+        <li class="option-list__item">
+          <div class="option">
+            <i class="icon icon--bath icon--accent option__icon"></i>
+            <span class="option__text">2 bath</span>
+          </div>
+        </li>
+        <li class="option-list__item">
+          <div class="option">
+            <i class="icon icon--square icon--accent option__icon"></i>
+            <span class="option__text">1203 Sqft.</span>
+          </div>
+        </li>
+      </ul>
+      </article>
+      <article class="residence-card">
+      <img 
+        class="residence-card__photo" 
+        src="./img/residence_1.jpg" 
+        srcset="./img/residence_1.jpg 1x, ./img/residence_1@2x.jpg 2x" 
+        alt=""
+      >
+      <p class="title title--small residence-card__title">Aliva Priva Jalvin</p>
+      <p class="text-base residence-card__address">1087 Pin Oak Drive, Clinton, USA</p>
+      <ul class="option-list residence-card__options">
+        <li class="option-list__item">
+          <div class="option">
+            <i class="icon icon--bed icon--accent option__icon"></i>
+            <span class="option__text">4 beds</span>
+          </div>
+        </li>
+        <li class="option-list__item">
+          <div class="option">
+            <i class="icon icon--bath icon--accent option__icon"></i>
+            <span class="option__text">2 bath</span>
+          </div>
+        </li>
+        <li class="option-list__item">
+          <div class="option">
+            <i class="icon icon--square icon--accent option__icon"></i>
+            <span class="option__text">1203 Sqft.</span>
+          </div>
+        </li>
+      </ul>
+      </article>
+    </div>
+    <br><br>
+
+    <ul class="benefit-card-group">
+      <li class="benefit-card-group__item">
+      <article class="benefit-card">
+        <div class="benefit-card__picture">
+          <i class="icon icon--large icon--search icon--accent benefit-card__icon"></i>
+        </div>
+        <p class="title title--small benefit-card__title">Easy to find</p>
+        <p class="text-base benefit-card__text">Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis lectus quam pretium amet facilisis.</p>
+      </article>
+      </li>
+      <li class="benefit-card-group__item">
+      <article class="benefit-card">
+        <div class="benefit-card__picture">
+          <i class="icon icon--large icon--like icon--accent benefit-card__icon"></i>
+        </div>
+        <p class="title title--small benefit-card__title">Easy to find</p>
+        <p class="text-base benefit-card__text">Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis lectus quam pretium amet facilisis.</p>
+      </article>
+      </li>
+      <li class="benefit-card-group__item">
+      <article class="benefit-card">
+        <div class="benefit-card__picture">
+          <i class="icon icon--large icon--bolt icon--accent benefit-card__icon"></i>
+        </div>
+        <p class="title title--small benefit-card__title">Easy to find</p>
+        <p class="text-base benefit-card__text">Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis lectus quam pretium amet facilisis.</p>
+      </article>
+      </li>
+      <li class="benefit-card-group__item">
+      <article class="benefit-card">
+        <div class="benefit-card__picture">
+          <i class="icon icon--large icon--search icon--accent benefit-card__icon"></i>
+        </div>
+        <p class="title title--small benefit-card__title">Easy to find</p>
+        <p class="text-base benefit-card__text">Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis lectus quam pretium amet facilisis.</p>
+      </article>
+      </li>
+    </ul>
+
+    <div class="slider-button-group">
+      <button type="button" class="slider-button slider-button-group__item">
+        <svg class="slider-button__icon" viewBox="0 0 23 38">
+          <path d="M18.4329 0L0 19L18.4329 38L23 33.2924L9.13411 19L23 4.70755L18.4329 0Z"/>
+        </svg>        
+      </button>
+      <button type="button" class="slider-button slider-button-group__item">
+        <svg class="slider-button__icon" viewBox="0 0 23 38">
+          <path d="M4.56705 38L23 19L4.56705 0L0 4.70755L13.8659 19L0 33.2924L4.56705 38Z"/>
+        </svg>            
+      </button>
+    </div><br><br>
+
+    <button type="button" class="carousel-button">
+      <svg class="carousel-button__icon" viewBox="0 0 14 23">
+        <path d="M11.1399 0L0 11.1399L11.1399 22.2798L13.9 19.5197L5.52018 11.1399L13.9 2.76009L11.1399 0Z"/>
+      </svg>
+    </button>
+    <button type="button" class="carousel-button">
+      <svg class="carousel-button__icon" viewBox="0 0 14 23">
+        <path d="M2.76009 22.2798L13.9 11.1399L2.76009 0L0 2.76009L8.37982 11.1399L0 19.5197L2.76009 22.2798Z"/>
+      </svg>        
+    </button><br><br>
+    <img src="./img/logo_vector.svg" alt="">
+  
+
+
+
+
+
+    
+
+  </div>
+
+</body>
+</html>

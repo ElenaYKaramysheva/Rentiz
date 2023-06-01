@@ -1,0 +1,49 @@
+/*===========================
+       Slider Button
+===========================*/
+
+.slider-button {
+    width: 5.75rem;
+    height: 3.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-button__icon {
+    width: 25%;
+    height: 61%;
+}
+
+.slider-button__icon path {
+    fill: var(--bg-color-primary-inverted);
+}
+
+@media (hover: hover) {
+    .slider-button:hover path {
+        fill: var(--bg-color-slider);
+    }
+}
+
+/*===========================
+    Slider Button Group
+===========================*/
+
+.slider-button-group {
+    display: flex;
+}
+
+.slider-button-group__item:not(:first-child) {
+    border-left: 1px solid var(--border-color-primary);
+}
+
+.slider-button--disabled path {
+    fill: var(--bg-color-slider);
+}
+
+.slider-button--disabled {
+    pointer-events: none;
+}

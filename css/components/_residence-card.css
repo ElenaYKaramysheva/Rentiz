@@ -1,0 +1,57 @@
+/* =========================
+       Option
+========================= */
+
+.option {
+    display: flex;
+    align-items: center;
+}
+
+.option__icon {
+    margin-right: 0.25rem;
+}
+
+.option__text {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.option-list {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+/* =========================
+       Residence Card
+========================= */
+
+.residence-card__photo {    
+    width: 100%;
+    height: auto;
+    aspect-ratio: 115/88;
+    display: block;
+    background: #ccc;
+    object-fit: cover;
+    margin-bottom: 1.375rem;
+}
+
+.residence-card__title {
+    margin-bottom: 0.1875rem;
+}
+
+.residence-card__options {
+    margin-top: 1rem;
+}
+
+/* =========================
+    Residence Card Group
+========================= */
+
+.residence-card-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21.875rem, 1fr));
+    gap: 1.25rem;
+}
+
+

@@ -1,0 +1,64 @@
+.section-mission {
+    background: linear-gradient(to right, var(--bg-color-primary), var(--bg-color-secondary));
+    position: relative;
+}
+
+.section-mission::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8.375rem;
+    height: 11.375rem;
+    background-image: url(/img/diamond_small_pattern.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    right: -4.25rem;
+    bottom: -6.5rem;
+    cursor: none;
+}
+
+.section-mission__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.section-mission__picture {
+    display: flex;
+    gap: 1.25rem;
+    flex-shrink: 0;
+    width: 50%;
+}
+
+.section-mission__picture-img {
+    background-color: var(--bg-color-tertiary);
+    display: block;
+    width: 50%;
+}
+
+.section-mission__content {
+    margin-left: 4.3%;
+}
+
+.section-mission__title {
+    margin-bottom: 1.375rem;
+}
+
+.section-mission__text {
+    margin-bottom: 3.0625rem;
+}
+
+@media (max-width: 1023.9px) {
+    .section-mission__wrapper {
+        flex-direction: column; 
+        align-items: start;
+    }
+
+    .section-mission__content {
+        margin-left: 0;
+    }
+
+    .section-mission__picture {
+        margin-bottom: 0.9375rem;
+    }
+}

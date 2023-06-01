@@ -37,3 +37,5 @@ bower_components
 
 # Security
 .env
+
+temporary-rentiz-main.code-workspace

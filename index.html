@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rentiz</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="./css/style.css">
+  
+
+
+</head>
+<body>
+  <div class="page">
+    <header class="page__header header">
+      <nav class="header__wrapper container">
+        <img class="header__logo logo" src="./img/logo_vector.svg" alt="Logo">
+
+        <ul class="header__menu site-menu">
+          <li class="site-menu__item">
+            <a class="site-menu__link site-menu__link--active" href="#">Home</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">About Us</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Buing</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Renting</a> 
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Selling</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Contact Us</a>
+          </li>
+        </ul>
+
+        <ul class="header__user-menu user-menu">
+          <li>
+            <button class="button button--ghost button--small">login</button>
+          </li>
+          <li>
+            <button class="button button--small">Sign Up</button>
+          </li>
+        </ul>
+        <button type="button" class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+          menu
+        </button>
+      </nav>
+    </header>
+
+    <main class="page__content">
+      <section class="section section-promo">
+        <div class="container">
+          <div class="section-promo__wrapper">
+            <div class="section-promo__content">
+              <h1 class="section-promo__title title title--large">Perfect way to buy and sell a home</h1>
+              <p class="section-promo__text text-base">Diam vitae, nec mattis lectus quam pretium amet facilisis. Urna, massa aliqua dui pellentesque. Ac, gravida in eget non amet eget purus non.</p>
+              <form class="section-promo__form inline-form">
+                <i class="inline-form__icon icon icon--medium icon--search"></i>
+                <input class="inline-form__input" type="text" placeholder="Find residence...">
+                <button class="section-prom__form-button inline-form__button button button--large" type="submit">Search</button>
+              </form>
+            </div>
+            <div class="section-promo__picture">
+              <img class="section-promo__picture-img" src="./img/photo_section_promo.jpg" alt="Home">
+            </div>
+          </div>
+        </div>
+      </section> <!--.section-promo-->
+
+      <section class="section section-partners">
+        <div class="container">
+          <h2 class="section-partners__title title title--medium">Featured In</h2>
+          <ul class="section-partners__list partner-logos">
+            <li class="partners-logo__item">
+              <img class="partners-logo__img" src="./img/partners_logo_vintage.svg" alt="Vin-tage">
+            </li>
+            <li class="partners-logo__item">
+              <img class="partners-logo__img" src="./img/partners_logo_violet.svg" alt="Violet">
+            </li>
+            <li class="partners-logo__item">
+              <img class="partners-logo__img" src="./img/partners_logo_ceathes.svg" alt="Ceathes">
+            </li>
+            <li class="partners-logo__item">
+              <img class="partners-logo__img" src="./img/partners_logo_creater.svg" alt="Creater Fav">
+            </li>
+            <li class="partners-logo__item">
+              <img class="partners-logo__img" src="./img/partners_logo_lavender.svg" alt="Lavender Agency">
+            </li>
+          </ul>
+        </div>
+      </section> <!--.section-partners-->
+
+      <section class="section section-popular">
+        <div class="container">
+          <h2 class="section-popular__title title title--medium">Popular Residence</h2>
+
+          <div class="section-popular-slider">
+            <div class="swiper popular-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide popular-slider__slide">
+                  <article class="residence-card">
+                    <img 
+                      class="residence-card__photo" 
+                      src="./img/residence_1.jpg" 
+                      srcset="./img/residence_1.jpg 1x, ./img/residence_1@2x.jpg 2x" 
+                      alt="Photo of the house"
+                    >
+                    <p class="title title--small residence-card__title">Aliva Priva Jalvin</p>
+                    <p class="text-base residence-card__address">1087 Pin Oak Drive, Clinton, USA</p>
+                    <ul class="option-list residence-card__options">
+                      <li class="option-list__item">
+                        <div class="option">
+                          <i class="icon icon--bed icon--accent option__icon"></i>
+                          <span class="option__text">4 beds</span>
+                        </div>
+                      </li>
+                      <li class="option-list__item">
+                        <div class="option">
+                          <i class="icon icon--bath icon--accent option__icon"></i>
+                          <span class="option__text">2 bath</span>
+                        </div>
+                      </li>
+                      <li class="option-list__item">
+                        <div class="option">
+                          <i class="icon icon--square icon--accent option__icon"></i>
+                          <span class="option__text">1203 Sqft.</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+
+                <div class="swiper-slide popular-slider__slide">
+                  <article class="residence-card">
+                    <img 
+                      class="residence-card__photo" 
+                      src="./img/residence_2.jpg" 
+                      srcset="./img/residence_2.jpg 1x, ./img/residence_2@2x.jpg 2x" 
+                      alt="Photo of the house"
+                    >
+                    <p class="title title--small residence-card__title">Hard line orchar</p>
+                    <p class="text-base residence-card__address">1087 Pin Oak Drive, Clinton, USA</p>
+                    <ul class="option-list residence-card__options">
+                      <li class="option-list__item">
+                        <div class="option">
+                          <i class="icon icon--bed icon--accent option__icon"></i>
+                          <span class="option__text">4 beds</span>
+                        </div>
+                      </li>
+                      <li class="option-list__item">
+                        <div class="option">
+                          <i class="icon icon--bath icon--accent option__icon"></i>
+                          <span class="option__text">2 bath</span>
+                        </div>
+                      </li>
+                      <li class="option-list__item">
+                        <div class="option">
+                          <i class="icon icon--square icon--accent option__icon"></i>
+                          <span class="option__text">1203 Sqft.</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+
+                <div class="swiper-slide popular-slider__slide">
+                  <article class="residence-card">
+                    <img 
+                      class="residence-card__photo" 
+                      src="./img/residence_3.jpg" 
+                      srcset="./img/residence_3.jpg 1x, ./img/residence_3@2x.jpg 2x" 
+                      alt="Photo of the house"
+                    >
+                    <p class="title title--small residence-card__title">Allpine lenevote</p>
+                    <p class="text-base residence-card__address">1087 Pin Oak Drive, Clinton, USA</p>
+                    <ul class="option-list residence-card__options">
+                      <li class="option-list__item">
+                        <div class="option">
+                          <i class="icon icon--bed icon--accent option__icon"></i>
+                          <span class="option__text">4 beds</span>
+                        </div>
+                      </li>
+                      <li class="option-list__item">
+                        <div class="option">
+                          <i class="icon icon--bath icon--accent option__icon"></i>
+                          <span class="option__text">2 bath</span>
+                        </div>
+                      </li>
+                      <li class="option-list__item">
+                        <div class="option">
+                          <i class="icon icon--square icon--accent option__icon"></i>
+                          <span class="option__text">1203 Sqft.</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+
+                <div class="swiper-slide section-slider__slide">
+                  <article class="residence-card">
+                    <img 
+                      class="residence-card__photo" 
+                      src="./img/residence_1.jpg" 
+                      srcset="./img/residence_1.jpg 1x, ./img/residence_1@2x.jpg 2x" 
+                      alt="Photo of the house"
+                    >
+                    <p class="title title--small residence-card__title">Aliva Priva Jalvin</p>
+                    <p class="text-base residence-card__address">1087 Pin Oak Drive, Clinton, USA</p>
+                    <ul class="option-list residence-card__options">
+                      <li class="option-list__item">
+                        <div class="option">
+                          <i class="icon icon--bed icon--accent option__icon"></i>
+                          <span class="option__text">4 beds</span>
+                        </div>
+                      </li>
+                      <li class="option-list__item">
+                        <div class="option">
+                          <i class="icon icon--bath icon--accent option__icon"></i>
+                          <span class="option__text">2 bath</span>
+                        </div>
+                      </li>
+                      <li class="option-list__item">
+                        <div class="option">
+                          <i class="icon icon--square icon--accent option__icon"></i>
+                          <span class="option__text">1203 Sqft.</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="carousel-button section-popular-slider__prev">
+              <svg class="carousel-button__icon" viewBox="0 0 14 23">
+                <path d="M11.1399 0L0 11.1399L11.1399 22.2798L13.9 19.5197L5.52018 11.1399L13.9 2.76009L11.1399 0Z"/>
+              </svg>
+            </button>
+            <button type="button" class="carousel-button section-popular-slider__next">
+              <svg class="carousel-button__icon" viewBox="0 0 14 23">
+                <path d="M2.76009 22.2798L13.9 11.1399L2.76009 0L0 2.76009L8.37982 11.1399L0 19.5197L2.76009 22.2798Z"/>
+              </svg>        
+            </button>
+          </div>
+          <div class="section-popular__button">
+            <a href="#" class="button">View all properties</a>
+          </div>
+        </div>
+      </section> <!--section-popular-->
+
+      <section class="section section-benefits">
+        <div class="container">
+          <h2 class="section-benefits__title title title--medium">Why to choose us</h2>
+          <ul class=" section-benefits__list benefit-card-group">
+            <li class="benefit-card-group__item">
+            <article class="benefit-card">
+              <div class="benefit-card__picture">
+                <i class="icon icon--large icon--search icon--accent benefit-card__icon"></i>
+              </div>
+              <p class="title title--small benefit-card__title">Easy to find</p>
+              <p class="text-base benefit-card__text">Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis lectus quam pretium amet facilisis.</p>
+            </article>
+            </li>
+            <li class="benefit-card-group__item">
+            <article class="benefit-card">
+              <div class="benefit-card__picture">
+                <i class="icon icon--large icon--like icon--accent benefit-card__icon"></i>
+              </div>
+              <p class="title title--small benefit-card__title">Affordable Prices</p>
+              <p class="text-base benefit-card__text">Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis lectus quam pretium amet facilisis.</p>
+            </article>
+            </li>
+            <li class="benefit-card-group__item">
+            <article class="benefit-card">
+              <div class="benefit-card__picture">
+                <i class="icon icon--large icon--bolt icon--accent benefit-card__icon"></i>
+              </div>
+              <p class="title title--small benefit-card__title">Quickly Process</p>
+              <p class="text-base benefit-card__text">Ac, gravida in diam vitae, nec mattis lectus quam pretium amet facilisis. Urna, massa aliqua dui pellentesque.</p>
+            </article>
+            </li>
+          </ul>
+          <div class="section-benefits__feedback">
+            <div class="swiper review-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide review-slider__slide">
+                  <blockquote class="review">
+                    <p class="text-loud review__text">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</p>
+                    <cite class="review__name">Elena Pravo</cite>
+                    <p class="text-base review__status">Ceo, Upstate</p>
+                  </blockquote>
+                </div>
+                <div class="swiper-slide review-slider__slide">
+                  <blockquote class="review">
+                    <p class="text-loud review__text">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla eget viverra sem.</p>
+                    <cite class="review__name">Elena Pravo</cite>
+                    <p class="text-base review__status">Ceo, Upstate</p>
+                  </blockquote>
+                </div>
+                <div class="swiper-slide review-slider__slide">
+                  <blockquote class="review">
+                    <p class="text-loud review__text">Massa semper non rutrum orci facilisi sit. Lectus porta quam a fringilla eget viverra sem. Vulputate massa hendrerit turpis gravida tempor, porttitor.</p>
+                    <cite class="review__name">Elena Pravo</cite>
+                    <p class="text-base review__status">Ceo, Upstate</p>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="slider-button-group review-slider__buttons">
+                <button type="button" class="slider-button slider-button-group__item review-slider__prev">
+                  <svg class="slider-button__icon" viewBox="0 0 23 38">
+                    <path d="M18.4329 0L0 19L18.4329 38L23 33.2924L9.13411 19L23 4.70755L18.4329 0Z"/>
+                  </svg>        
+                </button>
+                <button type="button" class="slider-button slider-button-group__item review-slider__next">
+                  <svg class="slider-button__icon" viewBox="0 0 23 38">
+                    <path d="M4.56705 38L23 19L4.56705 0L0 4.70755L13.8659 19L0 33.2924L4.56705 38Z"/>
+                  </svg>            
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> <!--.section-benefits-->
+
+      <section class="section section-mission">
+        <div class="container">
+          <div class="section-mission__wrapper">
+            <div class="section-mission__picture">
+              <img class="section-mission__picture-img" src="./img/mission_exterior.jpg" alt="Exterior of the house">
+              <img class="section-mission__picture-img" src="./img/mission_interior.jpg" alt="Interior of the house">
+            </div>
+            <div class="section-mission__content">
+              <h2 class="section-mission__title title title--medium">We help people to find homes</h2>
+              <p class="section-mission__text text-base">Mauris orci donec blandit maecenas. Orci lorem purus porttitor massa consectetur. Neque, vestibulum sed varius magna et at. Eu, adipiscing morbi augue justo. Nibh laoreet volutpat quis velit. Blandit aliquam donec sed morbi congue eget lorem viverra porta id lobortis.</p>
+              <button class="section-mission__button button">Get in touch</button>
+            </div>
+          </div>
+        </div>
+      </section> <!--.section-mission-->
+
+      <section class="section section-cta">
+        <div class="container">
+          <div class="section-cta__wrapper">
+            <div class="section-cta__header">
+              <h2 class="section-cta__title title title--large">Let’s simply begin with rentiz.</h2>
+            </div>
+            <div class="section-cta__content">
+              <p class="section-cta__text text-base">Neque, vestibulum sed varius magna et at. Eu, adipiscing morbi augue justo. Nibh laoreet volutpat quis velit. Blandit aliquam donec sed morbi congue eget lorem viverra porta id lobortis.</p>
+              <button class="section-cta__button button">Get started</button>
+            </div>
+          </div>
+        </div>
+      </section> <!--.section-cta-->
+    </main>
+
+    <footer class="page__footer footer">
+      <div class=" container">
+        <div class="footer__wrapper">
+          <section class="about">
+            <img class="logo" src="./img/logo_vector.svg" alt="Logo">
+            <span class="about__text text-base">Neque, vestibulum sed varius magna et at. Eu, adipiscing morbi augue.
+            </span>
+            <ul class="social">
+              <li class="social__item">
+                <a class="icon icon--fb social-link" href="#">Facebook</a>
+              </li>
+              <li class="social__item">
+                <a class="icon icon--inst social-link" href="#">Instagram</a>
+              </li>
+              <li class="social__item">
+                <a class="icon icon--tw social-link" href="#">Twitter</a>
+              </li>
+              <li class="social__item">
+                <a class="icon icon--yt social-link" href="#">Youtube</a>
+              </li>
+            </ul>
+          </section> <!--.about-->
+
+          <section class="footer-menu">
+            <h3 class="footer-menu__title title title--small">Project</h3>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                  <a class="footer-menu__link text-base" href="#">Houses</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link text-base" href="#">Rooms</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link text-base" href="#">Flats</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link text-base" href="#">Appartments</a>
+              </li>
+            </ul>
+          </section> <!--.footer-menu-->
+
+          <section class="footer-menu">
+            <h3 class="footer-menu__title title title--small">Company</h3>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                  <a class="footer-menu__link text-base" href="#">How we work ?</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link text-base" href="#">Capital</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link text-base" href="#">Security</a>
+              </li>
+            </ul>
+          </section> <!--.footer-menu-->
+
+          <section class="footer-menu">
+            <h3 class="footer-menu__title title title--small">Movement</h3>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                  <a class="footer-menu__link text-base" href="#">Who are we</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link text-base" href="#">Support us</a>
+              </li>
+            </ul>
+          </section> <!--.footer-menu-->
+
+          <section class="footer-menu">
+            <h3 class="footer-menu__title title title--small">Help</h3>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                  <a class="footer-menu__link text-base" href="#">Privacy</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link text-base" href="#">Condition</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link text-base" href="#">Blog</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link text-base" href="#">FAQs</a>
+              </li>
+            </ul>
+          </section> <!--footer-menu-->
+        </div>
+      </div> <!--.footer-wrapper-->
+
+      <div class="footer__copyright copyright">
+        <div class="container">
+          <div class="copyright__wrapper">
+            <p class="text-base">Copyright ©TemplatesJungle. 2022. All right reserved</p>
+            <p class="text-base">Design by: <a class="link" href="#">TemplatesJungle</a></p>
+          </div>
+        </div>
+      </div> <!--footer__copyright-->
+    </footer> <!--page__footer-->
+
+  </div><!--.page-->
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.carousel-button {
+    width: 4.875rem;
+    height: 4.875rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: 0.0625rem solid var(--border-color-secondary);
+    cursor: pointer;
+}
+
+.carousel-button:hover path {
+    fill: var(--bg-color-slider);
+}
+
+.carousel-button__icon {
+    width: 18%;
+    height: 28%;
+}
+
+.carousel-button__icon path {
+    fill: var(--bg-color-primary-inverted);
+}
+
+.carousel-button--disabled path {
+    fill: var(--bg-color-slider);
+}
+
+.carousel-button--disabled {
+    pointer-events: none;
+}

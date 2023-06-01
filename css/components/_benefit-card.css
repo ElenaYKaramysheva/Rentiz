@@ -1,0 +1,52 @@
+/*==========================
+      Benefit Card
+==========================*/
+
+.benefit-card {
+    text-align: center;
+}
+
+.benefit-card__picture {
+   width: 11.25rem;
+   height: 11.25rem;
+   border-radius: 50%;
+   background: var(--bg-color-accent-alpha);
+   margin-bottom: 2.25rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.benefit-card__title {
+    margin-bottom: 0.6875rem;
+}
+
+/*==========================
+    Benefit Card Group
+==========================*/
+
+.benefit-card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2.5rem 0rem;
+}
+
+.benefit-card-group__item {
+    width: 30%;
+}
+
+@media (max-width: 1023.9px) {
+    .benefit-card-group {
+        flex-direction: column;
+    }
+
+    .benefit-card-group__item {
+        width: 100%;
+    } 
+}
+
+
+

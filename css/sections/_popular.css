@@ -1,0 +1,76 @@
+.section-popular {
+    background-color: var( --bg-color-secondary);
+    background-image: url(/img/popular_residence_img.png);
+    background-size: cover;
+}
+
+.section-popular__title {
+    margin-bottom: 2.5rem;
+}
+
+.section-popular__group {
+    margin-top: 2.5rem;
+}
+
+.section-popular__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.1875rem;
+}
+
+.section-popular-slider {
+    position: relative;
+}
+
+.section-popular-slider__prev, .section-popular-slider__next {
+    --columns: 3;
+    --gap: 20px;
+    --gaps: calc(var(--gap) * (var(--columns) - 1));
+    --aspect-ratio: calc(115 / 88);
+    --slider-width: min(var(--container-width), 100vw);
+    --slide-width: calc(
+        (var(--slider-width) - var(--container-padding) * 2 - var(--gaps)) 
+        / var(--columns)
+    );
+    --photo-height: calc(var(--slide-width) / var(--aspect-ratio));
+
+    position: absolute;
+    top: calc(var(--photo-height) / 2);
+}
+
+.section-popular-slider__prev {
+    right: 100%;
+    transform: translate(-3.125rem, -50%);
+}
+
+.section-popular-slider__next {
+    left: 100%;
+    transform: translate(3.125rem, -50%);
+}
+
+@media (max-width: 480px) {
+    .section-popular-slider__prev,
+    .section-popular-slider__next {
+        --columns: 2;
+    }
+}
+
+@media (max-width:360px) {
+    .section-popular-slider__prev,
+    .section-popular-slider__next {
+        --columns: 1;
+    }
+}
+
+@media (max-width: 1130px) {
+    .section-popular-slider__prev {
+        transform: translate(4.375rem, -50%);
+        z-index: 5;
+    }
+
+    .section-popular-slider__next {
+        transform: translate(-4.375rem, -50%);
+        z-index: 5;
+    }
+} 
+

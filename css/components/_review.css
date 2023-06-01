@@ -1,0 +1,20 @@
+.review::before {
+    content: '';
+    display: block;
+    width: 5.5rem;
+    height: 4.375rem;
+    background: url('../../img/review_quote.svg') no-repeat 50% 50%;
+    background-size: contain;
+    margin-bottom: 1.25rem;
+}
+
+.review__text {
+    margin-bottom: 2.5rem;
+}
+
+.review__name {
+    font-size: 1.375rem;
+    line-height: 1.26em;
+    font-weight: 600;
+}
+

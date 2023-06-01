@@ -1,0 +1,36 @@
+html {
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+
+@media (max-width: 1620px) {
+  html {
+    font-size: 83%;
+  }
+}
+
+@media (max-width: 1460px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 67%;
+  }
+}
+
+body {
+  background: var(--bg-color-primary);
+  color: var(--text-color-primary);
+  font-family: var(--font-primary);
+}
+
+a {
+  color: var(--text-color-accent);
+}

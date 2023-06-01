@@ -1,0 +1,19 @@
+.social-link {
+    text-indent: -1000px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+@media (hover: hover) {
+    .social-link:hover {
+        background-color: var(--bg-color-primary-inverted);
+    }
+}
+
+.social {
+    display: flex;
+    gap: 1.875rem;
+}
+
+

@@ -1,0 +1,57 @@
+.section-benefits {
+    position: relative;
+}
+
+.section-benefits::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 76.5rem;
+    height: 70.75rem;
+    background-image: url(/img/arrow_pattern.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    bottom: 1.5rem;
+    right: 50%;
+    transform: 
+        translateX(
+            calc(
+             (var(--container-width) / 2 - var(--container-padding) - 2.8125rem) * -1
+            )
+        );
+    pointer-events: none;
+}
+
+.section-benefits__title {
+    text-align: center;
+    margin-bottom: 4.1875rem;
+}
+
+.section-benefits__feedback {
+    margin-top: 12.0625rem;
+}
+
+/*=======Review-slider========*/
+
+.review-slider {
+    width: min(62.75rem, 70%);
+}
+
+.review-slider__slide {
+    width: 100%;
+}
+
+.review-slider__buttons {
+    justify-content: flex-end;
+}
+
+@media (max-width: 1023.9px) {
+    .section-benefits__feedback {
+        margin-top: 3rem;
+    }
+
+    .review-slider {
+        width: 100%;
+    }
+}

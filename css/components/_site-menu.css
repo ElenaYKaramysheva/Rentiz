@@ -1,0 +1,35 @@
+.site-menu {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.site-menu__link {
+    color: var(--text-color-secondary);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 2px 0px;
+    line-height: normal;
+    border-bottom: 3px solid transparent;
+}
+
+.site-menu__link--active {
+    color: var(--text-color-primary);
+    border-color: var(--bg-color-accent);
+    pointer-events: none;
+}
+
+@media (hover: hover) {
+    .site-menu__link:hover {
+        color: var(--text-color-accent);
+    }
+}
+
+@media (max-width: 1023.9px) {
+    .site-menu {
+        flex-direction: column;
+    }
+
+    .site-menu__link {
+        font-size: 2rem;
+    }
+}

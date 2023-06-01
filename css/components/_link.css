@@ -1,0 +1,11 @@
+.link {
+    color: var(--text-color-primary);
+    border-bottom: 1px solid var(--text-color-primary);
+}
+
+@media (hover: hover) {
+    .link:hover {
+        border-bottom-color: transparent;
+        color: var(--text-color-accent);
+    }
+}

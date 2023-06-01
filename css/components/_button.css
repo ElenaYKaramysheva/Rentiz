@@ -1,0 +1,35 @@
+.button {
+ background-color: var(--bg-color-accent);
+ color: var(--text-color-primary);
+ font-weight: 500;
+ font-size: 1.5rem;
+ padding: 0.625rem 2.625rem;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 4.5rem;
+ text-align: center;
+ border: none;
+ text-transform: capitalize;
+ cursor: pointer;
+}
+
+.button--small {
+    font-size: 1rem;
+    padding: 0.3125rem 1.25rem;
+    min-height: 2.5rem;
+}
+
+.button--large {
+    min-height: 5.625rem;
+}
+
+.button--ghost {
+    background-color: transparent;
+}
+
+@media (hover: hover) {
+    .button:hover {
+        background-color: var(--bg-color-accent-hover);
+    }
+}

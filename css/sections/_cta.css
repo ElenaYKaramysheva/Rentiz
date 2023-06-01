@@ -1,0 +1,71 @@
+.section-cta {
+    position: relative;
+}
+
+.section-cta::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 31.125rem;
+    height: 38.375rem;
+    background-image: url(/img/curve_line_patter.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    top: 50%;
+    right: 50%;
+    transform: 
+        translateX(
+            calc(
+             (var(--container-width) / 2 - var(--container-padding) - 6.25rem) * -1
+            )
+        );
+    pointer-events: none;
+    z-index: -1;
+}
+
+.section-cta__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.section-cta__header {
+    display: flex;
+    justify-content: center;
+    width: min(45rem, 50%);
+    flex-shrink: 0;
+}
+
+.section-cta__title {
+    margin-left: 8.2%;
+    margin-right: 6%;
+}
+
+.section-cta__text {
+    padding-bottom: 2.5rem;
+    padding-right: 3.9375rem;
+}
+
+.section-cta__button {
+    margin-top: 1rem;
+}
+
+@media (max-width: 1023.9px) {
+    .section-cta__wrapper {
+        flex-direction: column;
+    }
+
+    .section-cta__header {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .section-cta__title {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .section-cta__text {
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,31 @@
+.inline-form {
+    background-color: var(--bg-color-primary-inverted);
+    display: flex;
+    align-items: center;
+    padding: 0.3125rem 0.3125rem 0.3125rem 1.875rem;
+}
+
+.inline-form__input {
+    flex-grow: 1;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    outline: none;
+    color: var(--text-color-primary-inverted);
+}
+
+.inline-form__input::placeholder {
+    color: var(--text-color-secondary-inverted);
+}
+
+.inline-form__icon {
+    margin-right: 1.25rem;
+    background-color: var(--text-color-secondary-inverted);
+}
+
+@media (max-width: 1023.9px) {
+    .inline-form__icon {
+        display: none;
+    }
+}

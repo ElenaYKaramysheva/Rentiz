@@ -1,0 +1,102 @@
+.section-promo {
+    padding-top: 3.75rem;
+    --width-s: max(91.25rem);
+    position: relative;
+}
+
+.section-promo::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 11.125rem;
+    height: 30.125rem;
+    background-image: url(/img/diamond_pattern.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    top: 55%;
+    left: 50%; 
+    transform: 
+        translateX(
+            calc(
+                var(--container-width) / 2 - var(--container-padding) + 8.125rem
+            )
+        );
+    pointer-events: none;
+}
+
+.section-promo__wrapper {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    position: relative;
+}
+
+.section-promo__content, .section-promo__picture {
+    width: 50%;
+}
+
+.section-promo__content {
+    position: relative;
+    z-index: 2;
+}
+
+.section-promo__picture-img {
+    background-color: var(--bg-color-tertiary);
+    display: block;
+    width: 100%;
+}
+
+.section-promo__text {
+    margin-top: 1.125rem;
+}
+
+.section-promo__form {
+    margin-top: 3.75rem;
+    margin-right: -11.8125rem;
+}
+
+.section-promo__form-button {
+    width: 10.25rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (min-width: 1024px){
+   .section-promo__picture {
+        aspect-ratio: 140/129;
+    }
+    .section-promo__picture-img {
+        height: 100%;
+    }
+}
+
+@media (max-width: 1023.9px) {
+    .section-promo {
+        padding-top: 9rem;
+    }
+
+    .section-promo__wrapper {
+        flex-direction: column;
+    }
+
+    .section-promo__content, .section-promo__picture {
+        width: 100%;
+    }
+
+    .section-promo__picture {
+        order: -1;
+    } 
+
+    .section-promo__picture-img {
+        max-width: 31.25rem;
+        margin: 0 auto;
+    }
+
+    .section-promo__form {
+        margin-right: 0;
+    }
+}
+
+
+
